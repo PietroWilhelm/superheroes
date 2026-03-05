@@ -21,11 +21,4 @@ public class SuperheroService {
         repository.add(superhero);
         return superhero;
     }
-
-    public Optional<Superhero> getHeroById(Long id){
-        return repository.stream()
-                .filter(superhero -> superhero.getId().equals(id))
-                .findFirst();
-    }
-
 }
